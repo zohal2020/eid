@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Eid al-Adha Mubarak</title>
+  <!-- Beautiful Arabic-style English font -->
+  <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: all 0.4s ease;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'El Messiri', sans-serif;
+      direction: ltr;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background: linear-gradient(to top right, #001f3f, #0d0d2b);
+      color: #fdfdfd;
+    }
+
+    .container {
+      text-align: center;
+      border: 2px solid gold;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      color: gold;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      width: 130px;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      padding: 10px 20px;
+      border: none;
+      background: gold;
+      color: #001f3f;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px gold;
+    }
+
+    /* LIGHT MODE STYLES */
+    body.light {
+      background: linear-gradient(to top right, #ffffff, #f9f9f9);
+      color: #222;
+    }
+
+    body.light .container {
+      background-color: #ffffffcc;
+      border-color: #ffcc00;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    body.light h1 {
+      color: #b8860b;
+      text-shadow: none;
+    }
+
+    body.light p {
+      color: #444;
+    }
+
+    body.light button {
+      background: #001f3f;
+      color: gold;
+      box-shadow: 0 0 8px #001f3f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Eid sheep icon with Saturn-style aura -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1998/1998610.png" alt="Golden Eid Sheep" />
+    <h1>Eid al-Adha Mubarak!</h1>
+    <p>Wishing you a blessed and joyful Eid filled with peace, love, and light. May your days be as golden as your dreams.</p>
+    <button onclick="toggleMode()">Toggle Day/Night Mode</button>
+  </div>
+
+  <script>
+    function toggleMode() {
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
